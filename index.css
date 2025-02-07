@@ -1,11 +1,10 @@
 :root {
   --back:#ffffff;
   --font: #484d48;
-  --invertfont: white;
   --a: #0d9fc4;
   --header: #073d69;
-  --navbar : #052742;
-  --banner: #1a1919;
+  /* --navbar : #052742; */
+  /* --banner: #1a1919; */
   }
 
  .body, .card {
@@ -15,7 +14,7 @@
       
 .navbar {
   color : var(--back);
-  background-color: var(--navbar);
+  background-color: var(--header);
   .nav-link{
     color : var(--back);
   }
@@ -43,17 +42,28 @@ a:hover {
   text-decoration: underline;
 }
 
-.footer {
+footer {
   position: fixed;
   bottom: 0;
+  padding-top: 15px;
   width: 100%;
-  /* white-space: nowrap; */
-  line-height: 10px;
-  color:var(--invertfont);
+  white-space: nowrap;
+  line-height: 15px;
   text-align: center;
-  background-color: var(--navbar);
+  color:var(--back);
+  background-color: var(--header);
+  margin-top: 2px;
 }
 
+/* Hover effect styling for interactivity 
+    */ 
+/* .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+} */
+
+/* Code below was used before addopting Bootstrap  */
 
 /* .sidenav{
   position: sticky;

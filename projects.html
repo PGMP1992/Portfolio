@@ -2,18 +2,27 @@
 <html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <style>
+    /* Hover effect styling for interactivity 
+    */ 
+    .card:hover {
+      box-shadow: 4px 4px 8px rgba(54, 137, 245, 0.2); 
+      transform: scale(1.02);
+      transition: all 0.3s ease;
+    }
+</style>
+  
   <body>
   
-  <div id="projects" class="container">
+  <div id="projects" class="container border-0 m-3">
     
-        <div class="card border border-0">
+        <!-- <div class="container border-0"> -->
           <div class="h5 text-decoration-underline mb-3">Projects</div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-2">
             
               <!-- SCS ----------------------------   -->
               <div class="col-md-3">
-              <div class="card h-100 border-1">
+              <div class="card h-100 border-1 ">
                 <div class="card-header border-1">
                   <h6><a href="https://pgmp1992-001-site1.jtempurl.com/" target="_blank">
                     <!-- <h6><a href="https://scservices.se/" target="_blank"> -->
@@ -142,7 +151,7 @@
             </div>    
           </div>
         </div>
-      </div>
+      <!-- </div> -->
 </body>
 
 </html>
