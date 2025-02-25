@@ -12,11 +12,17 @@
         color : var(--font);
       }
       
-.navbar {
-  color : var(--back);
-  background-color: var(--header);
-  .nav-link{
+ .card-header {
+        background-color: #ebf1f7;
+        color : var(--font);
+        margin-bottom: 10px;
+      }
+ 
+  .navbar {
     color : var(--back);
+    background-color: var(--header);
+    .nav-link{
+      color : var(--back);
   }
 }
 
