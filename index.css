@@ -16,6 +16,7 @@
         background-color: #ebf1f7;
         color : var(--font);
         margin-bottom: 10px;
+        border-bottom: 1px solid #d3d3d3;
       }
  
   .navbar {
