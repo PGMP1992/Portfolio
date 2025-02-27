@@ -1,55 +1,85 @@
-:root {
-  --back:#ffffff;
+ :root {
+  --back: #ffffff;
   --font: #484d48;
+  --navfont: #ffffff;
   --a: #0d9fc4;
-  --header: #073d69;
-  /* --navbar : #052742; */
-  /* --banner: #1a1919; */
-  }
+  --navbar: #073d69;
+  --tablinks : #b8d4ee;
+  --h :   #073d69;
+  --cardheader : #ebf1f7;
+} 
 
- .body, .card {
-        background-color: var(--back);
-        color : var(--font);
-      }
-      
+:root .dark-theme {
+  --back: #080808;
+  --font: #b4b1b1;
+  --a: #9cccd8;
+  --navbar: #000000;
+  --tablinks : #011b33;
+  --h : #dfecf7;
+  --cardheader : #1f1f1f;
+} 
+
+.theme-toggle {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.theme-toggle i {
+  font-size: 1.2rem;
+  color: var(--navfont);
+}
+
+body, .card {
+    background-color: var(--back);
+    color : var(--font);
+  }
+ 
  .card-header {
-        background-color: #ebf1f7;
+        background-color:  var(--cardheader);
         color : var(--font);
         margin-bottom: 10px;
         border-bottom: 1px solid #d3d3d3;
       }
  
   .navbar {
-    color : var(--back);
-    background-color: var(--header);
-    .nav-link{
-      color : var(--back);
+    color : var(--navfont); 
+    background-color: var(--navbar); 
   }
-}
 
-a, button, .nav-link {
+    .nav-link { 
+      color: var(--navfont);
+      
+    }
+    .nav-link:hover {
+      color: var(--navfont);
+    }
+    
+  
+a, .button {
   color: var(--a); 
   cursor: pointer;
 }
 
 .tablinks {
-  background-color: #ebf1f7;
+  color: var(--font);
+  /* background-color: #ebf1f7; */
 }
 
 .tablinks:hover {
-  color: var(--back);
+  color: var(--navfont);
   background-color: #b8d4ee;
 } 
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--header); 
+  color: var(--h); 
 }
 
 a:hover {
   text-decoration: underline;
+  /* color: var(--font); */
 }
 
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   padding-top: 15px;
@@ -60,8 +90,18 @@ footer {
   color:var(--back);
   background-color: var(--header);
   margin-top: 2px;
+} */
+
+/* Add this at the end of your existing CSS */
+/* .dark-theme .navbar {
+  background-color: var(--header);
+  color: var(--font);
 }
 
+.dark-theme .card, .card-body {
+  background-color: var(--back);
+  color: var(--font);
+} */
 /* Hover effect styling for interactivity 
     */ 
 /* .card:hover {

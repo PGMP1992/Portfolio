@@ -61,6 +61,18 @@ function clickTab() {
   showSlides();
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const themeIcon = document.getElementById('theme-icon');
+  
+  themeIcon.addEventListener('click', function() {
+      document.body.classList.toggle('dark-theme');
+      if (document.body.classList.contains('dark-theme')) {
+          themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+      } else {
+          themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+      }
+  });
+});
 
 
 
