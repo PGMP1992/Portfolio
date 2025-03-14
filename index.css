@@ -13,11 +13,23 @@
   --back: #080808;
   --font: #b4b1b1;
   --a: #9cccd8;
-  --navbar: #000000;
+  --navbar: #1f1f1f;
   --tablinks : #011b33;
-  --h : #cacfd3;
+  --h : #dfe2e6;
   --cardheader : #1f1f1f;
 } 
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 
 .theme-toggle {
   cursor: pointer;
@@ -66,7 +78,6 @@ a, .button {
 
 .tablinks {
   color: var(--font);
-  /* background-color: #ebf1f7; */
 }
 
 .tablinks:hover {
@@ -81,6 +92,16 @@ h1, h2, h3, h4, h5, h6 {
 a:hover {
   text-decoration: underline;
   /* color: var(--font); */
+}
+
+footer {
+  flex-shrink: 0;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  color: var(--navfont);
+  background-color: var(--navbar);
+  margin-top: auto;
 }
 
 /* footer {

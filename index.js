@@ -61,6 +61,7 @@ function clickTab() {
   showSlides();
 }
 
+// Switch themes dark-light mode
 document.addEventListener('DOMContentLoaded', function() {
   const themeIcon = document.getElementById('theme-icon');
   
