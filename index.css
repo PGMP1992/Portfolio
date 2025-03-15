@@ -1,12 +1,13 @@
  :root {
   --back: #ffffff;
   --font: #484d48;
-  --navfont: #ffffff;
+  --navfont: var(--back);
   --a: #0d9fc4;
   --navbar: #073d69;
   --tablinks : #b8d4ee;
-  --h :   #073d69;
+  --h :   var(--navbar);
   --cardheader : #ebf1f7;
+  --primary: red;
 } 
 
 :root .dark-theme {
@@ -15,7 +16,7 @@
   --a: #9cccd8;
   --navbar: #1f1f1f;
   --tablinks : #011b33;
-  --h : #dfe2e6;
+  --h : #396aaa;
   --cardheader : #1f1f1f;
 } 
 
@@ -66,33 +67,33 @@ body, .card {
       color: var(--navfont);
       
     }
-    .nav-link:hover {
-      color: var(--navfont);
-    }
-    
+      .nav-link:hover {
+        color: var(--navfont);
+      }
+      
   
 a, .button {
   color: var(--a); 
   cursor: pointer;
 }
+  a:hover {
+    text-decoration: underline 3px var(--primary); 
+
+  }
 
 .tablinks {
   color: var(--font);
 }
-
-.tablinks:hover {
-  color: var(--navfont);
-  background-color: #b8d4ee;
-} 
+  .tablinks:hover {
+    color: var(--navfont);
+    background-color: #b8d4ee;
+    text-decoration: none;
+  } 
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--h); 
 }
 
-a:hover {
-  text-decoration: underline;
-  /* color: var(--font); */
-}
 
 footer {
   flex-shrink: 0;
