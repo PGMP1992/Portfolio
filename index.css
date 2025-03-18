@@ -7,7 +7,7 @@
   --tablinks : #b8d4ee;
   --h :   var(--navbar);
   --cardheader : #ebf1f7;
-  --primary: red;
+  /* --primary: red; */
 } 
 
 :root .dark-theme {
@@ -69,6 +69,8 @@ body, .card {
     }
       .nav-link:hover {
         color: var(--navfont);
+        text-decoration: underline;
+        /* text-decoration: underline 3px var(--primary);      */
       }
       
   
@@ -76,9 +78,10 @@ a, .button {
   color: var(--a); 
   cursor: pointer;
 }
-  a:hover {
-    text-decoration: underline 3px var(--primary); 
 
+  a:hover {
+    text-decoration: underline;
+    /* color: var(--ahover) !important; */
   }
 
 .tablinks {
