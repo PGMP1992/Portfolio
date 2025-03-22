@@ -13,38 +13,37 @@
       </script>
       <script src="index.js"></script> 
     </head>
-  <body>
+    <body>
 
-    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
-      <div class="container">
-          <button class="navbar-toggler bg-light m-1" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span> 
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">              
+      <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+        <div class="container">
+            <button class="navbar-toggler bg-light m-1" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
             
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('home.html','content')">Home</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('about.html','content')">About</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('work.html','content')">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('projects.html','content')">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('contact.html','content')">Contact</a></li>
-            </ul>
-            <div class="theme-toggle">
-              <i class="bi bi-sun-fill" id="theme-icon"></i>
+            <div class="collapse navbar-collapse" id="navbarNav">              
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item"><a class="nav-link" onclick = "load_page('home.html','content')">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" onclick = "load_page('about.html','content')">About</a></li>
+                  <li class="nav-item"><a class="nav-link" onclick = "load_page('work.html','content')">Experience</a></li>
+                  <li class="nav-item"><a class="nav-link" onclick = "load_page('projects.html','content')">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" onclick = "load_page('contact.html','content')">Contact</a></li>
+              </ul>
+              <div class="theme-toggle">
+                <i class="bi bi-sun-fill" id="theme-icon"></i>
+              </div>
             </div>
-          </div>
+        </div>
+      </nav>
+      
+      <div class="container mb-3" id="content">
+        <!-- Content will be loaded here -->
       </div>
-    </nav>
-    
-    <div class="container mb-3" id="content">
-      <!-- Content will be loaded here -->
-    </div>
 
-    <footer>
-      &copy; 2025
-    </footer>
+      <footer>
+        &copy; 2025
+      </footer>
 
-  </body>
+    </body>
   </html>

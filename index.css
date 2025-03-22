@@ -1,23 +1,25 @@
  :root {
   --back: #ffffff;
   --font: #484d48;
-  --navfont: var(--back);
+  /* --navfont: var(--back); */
   --a: #0d9fc4;
-  --navbar: #073d69;
+  /* --navbar: #073d69; */
   --tablinks : #b8d4ee;
-  --h :   var(--navbar);
-  --cardheader : #ebf1f7;
+  --h : #396aaa;
+  /* --h :   var(--navbar); */
+  /* --cardheader : #ebf1f7; */
   /* --primary: red; */
 } 
 
 :root .dark-theme {
   --back: #080808;
-  --font: #b4b1b1;
+  --font: #b4b1b1; 
+  --navfont: var(--font);  
   --a: #9cccd8;
-  --navbar: #1f1f1f;
+  /* --navbar: #1f1f1f; */
   --tablinks : #011b33;
   --h : #396aaa;
-  --cardheader : #1f1f1f;
+  /* --cardheader : #1f1f1f; */
 } 
 
 body {
@@ -39,7 +41,7 @@ main {
 
 .theme-toggle i {
   font-size: 1.2rem;
-  color: var(--navfont);
+  color: var(--font);
 }
 
 body, .card {
@@ -47,33 +49,30 @@ body, .card {
     color : var(--font);
   }
  
- .card-header {
+ /* .card-header {
         background-color:  var(--cardheader);
         color : var(--font);
         margin-bottom: 10px; 
         border-bottom: 0px;
       }
- 
+  */
   .navbar {
-    color : var(--navfont); 
-    background-color: var(--navbar); 
-    position: sticky; 
+    /* color : var(--navfont);  */
+    /*background-color: var(--navbar);  */
     top: 0;
     width: 100%;
     z-index: 1000;
   }
 
     .nav-link { 
-      color: var(--navfont);
-      
+      color: var(--navfont); 
     }
       .nav-link:hover {
         color: var(--navfont);
         text-decoration: underline;
-        /* text-decoration: underline 3px var(--primary);      */
+        /* text-decoration: underline 3px var(--primary);*/
       }
       
-  
 a, .button {
   color: var(--a); 
   cursor: pointer;
@@ -88,7 +87,7 @@ a, .button {
   color: var(--font);
 }
   .tablinks:hover {
-    color: var(--navfont);
+    /* color: var(--navfont); */
     background-color: #b8d4ee;
     text-decoration: none;
   } 
@@ -103,8 +102,8 @@ footer {
   padding: 5px 0;
   width: 100%;
   text-align: center;
-  color: var(--navfont);
-  background-color: var(--navbar);
+  /* color: var(--navfont); 
+  background-color: var(--navbar); */
   margin-top: auto;
 }
 
