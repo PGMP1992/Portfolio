@@ -1,0 +1,237 @@
+:root {
+  --blur-bg: rgb(250, 250, 250, 0.7);
+  --back: #ffffffff;
+  --font: #1f1f1f;
+  --a: #007AFF;
+  --tablinks: var(--blur-bg);
+  --h: #1c1c1e;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+} 
+
+:root .dark-theme {
+  --blur-bg: rgb(49, 49, 54);
+  --back: #1c1c1e;
+  --font: #ffffffd2;
+  --a: #2f90f8;
+  --tablinks: var(--blur-bg);
+  --h: #ffffffff;
+  --card-shadow: rgba(0, 0, 0, 0.4);
+} 
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--back);
+  color: var(--font);
+}
+
+
+main {
+  flex: 1 0 auto;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.theme-toggle i {
+  font-size: 1.2rem;
+  color: var(--font);
+}
+
+.tabcontent, .card {
+  background-color: var(--back);
+  color: var(--font);
+  backdrop-filter: blur(10px);
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  box-shadow: 0 4px 6px var(--card-shadow);
+  /* transition: all 0.3s ease; */
+}
+
+/* .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px var(--card-shadow);
+} */
+ /* .card-header {
+        background-color:  var(--cardheader);
+        color : var(--font);
+        margin-bottom: 10px; 
+        border-bottom: 0px;
+      }
+  */
+  .navbar {
+    background-color: var(--blur-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .nav-link { 
+    color: var(--font);
+    font-weight: 500;
+    /* transition: all 0.2s ease; */
+  }
+  
+  .nav-link:hover {
+    color: var(--a);
+    text-decoration: none;
+  }
+       
+  a, .button {
+    color: var(--a);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+    /* text-decoration: none; */
+  }
+  
+  .tablinks {
+    color: var(--font);
+    background-color: var(--blur-bg);
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+  }
+  
+  .tablinks:hover {
+    background-color: var(--a);
+    color: var(--back);
+    /* text-decoration: none; */
+  } 
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--h); 
+}
+
+footer {
+  flex-shrink: 0;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  color: var(--font);
+  background-color: var(--blur-bg);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+/* Hover effect styling for interactivity 
+    */ 
+/* .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+} */
+
+/* Code below was used before addopting Bootstrap  */
+
+/* .sidenav{
+  position: sticky;
+  padding: 10px;
+  top: 0px;
+  background-color: var(--banner);
+}
+
+.sidenav a{
+  color: var(--invertfont); 
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 0px 10px;
+}
+
+.sidenav a:hover{
+  color: var(--invertfont);
+  background-color: var(--a); 
+}
+
+.tablinks{
+  position: sticky;
+  padding: 10px;
+  top: 0px;
+  color: var(--a);
+  text-decoration: none;
+}
+
+.tab a {
+  color: var(--a); 
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 0px 10px;
+}
+
+.tab a:hover{
+  background-color: var(--a);
+  color: var(--invertfont); 
+  transition: 0.3s;
+  padding: 0px 10px;
+}
+
+/* Contact ------------------------
+#map {
+  width:100%;
+  height: auto;
+  margin-right: 2%;
+}
+
+  /* Style inputs 
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: var(--font);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--a);
+  }
+
+  /* Style the bottom navigation bar
+#bottomnav {
+  overflow: hidden;
+  background-color: var(--back);
+  color: var(--a);
+}
+
+/* Style the nav links 
+.bottomnav a {
+  float: left;
+  display: block;
+  color:var(--a);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.bottomnav a:hover {
+  color: var(--invertfont);
+  background-color: var(--a)
+}
+
+.bottomnav img {
+  width: 20px; 
+  height: 20px; 
+  float:left;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+} */
