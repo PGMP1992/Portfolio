@@ -1,5 +1,5 @@
 :root {
-  --blur-bg: rgb(250, 250, 250, 0.7);
+  --blur-bg: rgba(233, 236, 241, 0.877);
   --back: #ffffffff;
   --font: #1f1f1f;
   --a: #007AFF;
@@ -9,7 +9,7 @@
 } 
 
 :root .dark-theme {
-  --blur-bg: rgb(49, 49, 54);
+  --blur-bg: rgb(23, 23, 24);
   --back: #1c1c1e;
   --font: #ffffffd2;
   --a: #2f90f8;
@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: var(--back);
+  background-color: var(--blur-bg);
   color: var(--font);
 }
 
@@ -66,7 +66,7 @@ main {
       }
   */
   .navbar {
-    background-color: var(--blur-bg);
+    background-color: var(--back);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     top: 0;
@@ -98,7 +98,7 @@ main {
   
   .tablinks {
     color: var(--font);
-    background-color: var(--blur-bg);
+    background-color: var(--back);
     padding: 8px 16px;
     transition: all 0.2s ease;
   }
@@ -119,7 +119,7 @@ footer {
   width: 100%;
   text-align: center;
   color: var(--font);
-  background-color: var(--blur-bg);
+  background-color: var(--back);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: auto;
