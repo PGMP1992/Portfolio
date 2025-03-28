@@ -82,7 +82,7 @@ main {
   
   .nav-link:hover {
     color: var(--a);
-    text-decoration: none;
+    text-decoration: underline;
   }
        
   a, .button {
@@ -101,12 +101,17 @@ main {
     background-color: var(--back);
     padding: 8px 16px;
     transition: all 0.2s ease;
+    appearance:var(--card-shadow) ;
   }
   
+  .tablinks.active {
+    color: var(--back);
+    text-decoration: underline;
+  }
+
   .tablinks:hover {
     background-color: var(--a);
     color: var(--back);
-    /* text-decoration: none; */
   } 
 
 h1, h2, h3, h4, h5, h6 {
