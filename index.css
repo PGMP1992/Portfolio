@@ -98,21 +98,18 @@ main {
   
   .tablinks {
     color: var(--font);
-    background-color: var(--back);
+    background-color: var(--blur-bg);
     padding: 8px 16px;
-    transition: all 0.2s ease;
-    appearance:var(--card-shadow) ;
-  }
-  
-  .tablinks.active {
-    color: var(--back);
-    text-decoration: underline;
-  }
+}
 
-  .tablinks:hover {
+.tablinks.active {
+  text-decoration: underline;
+}
+
+.tablinks:hover {
     background-color: var(--a);
     color: var(--back);
-  } 
+} 
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--h); 
@@ -130,6 +127,9 @@ footer {
   margin-top: auto;
 }
 
+/* ------------------------------------------------------------ 
+Text below is old CSS that was used before adopting Bootstrap 
+-------------------------------------------------------------*/
 /* Hover effect styling for interactivity 
     */ 
 /* .card:hover {
@@ -137,8 +137,6 @@ footer {
   transform: scale(1.02);
   transition: all 0.3s ease;
 } */
-
-/* Code below was used before addopting Bootstrap  */
 
 /* .sidenav{
   position: sticky;
