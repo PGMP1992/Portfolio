@@ -9,8 +9,8 @@
 } 
 
 :root .dark-theme {
-  --blur-bg: rgb(23, 23, 24);
-  --back: #1c1c1e;
+  --blur-bg: #1e1e1f;
+  --back:  rgb(23, 23, 24);
   --font: #ffffffd2;
   --a: #2f90f8;
   --tablinks: var(--blur-bg);
