@@ -5,7 +5,7 @@
   --a: #007AFF;
   --tablinks: var(--blur-bg);
   --h: #1c1c1e;
-  --card-shadow: rgba(0, 0, 0, 0.1);
+  --border: rgba(0, 0, 0, 0.1);
 } 
 
 :root .dark-theme {
@@ -15,7 +15,7 @@
   --a: #2f90f8;
   --tablinks: var(--blur-bg);
   --h: #ffffffff;
-  --card-shadow: rgba(0, 0, 0, 0.4);
+  --border: rgba(145, 142, 142, 0.4);
 } 
 
 
@@ -44,6 +44,7 @@ main {
   color: var(--font);
 }
 
+
 .tabcontent, .card {
   background-color: var(--back);
   color: var(--font);
@@ -66,9 +67,9 @@ main {
       }
   */
   .navbar {
-    background-color: var(--back);
+    background-color: var(--blur-bg);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--border);
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -84,17 +85,17 @@ main {
     color: var(--a);
     text-decoration: underline;
   }
-       
+  
   a, .button {
     color: var(--a);
     cursor: pointer;
     transition: all 0.2s ease;
   }
   
-  a:hover {
+  /* a:hover {
     opacity: 0.8;
     /* text-decoration: none; */
-  }
+  } */
   
   .tablinks {
     color: var(--font);
@@ -117,13 +118,13 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
   flex-shrink: 0;
-  padding: 15px 0;
+  padding: 10px 0;
   width: 100%;
   text-align: center;
   color: var(--font);
-  background-color: var(--back);
+  background-color: var(--blur-bg);
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--border);
   margin-top: auto;
 }
 

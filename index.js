@@ -30,23 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
 /* Work.htm  
 onclick shows selected tab */ 
 function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  document.querySelectorAll('.tabcontent').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.tablinks').forEach(el => el.classList.remove('active'));
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.classList.add('active');
 }
-
-// Set the default tab to open
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("defaultOpen").click();
-});
 
   // Work.htm  
   //Get the element with id="defaultOpen" above and click on it */ 
