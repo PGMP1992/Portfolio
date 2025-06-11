@@ -1,10 +1,8 @@
 :root {
-  --blur-bg: rgba(233, 236, 241, 0.877);
+  --blur-bg: rgba(233, 236, 241, 0.959);
   --back: #ffffffff;
   --font: #1f1f1f;
-  --a: #007AFF;
-  --tablinks: var(--blur-bg);
-  --h: #1c1c1e;
+  --h: #4c98ee;
   --border: rgba(0, 0, 0, 0.1);
 } 
 
@@ -12,9 +10,7 @@
   --blur-bg: #1e1e1f;
   --back:  rgb(23, 23, 24);
   --font: #ffffffd2;
-  --a: #2f90f8;
-  --tablinks: var(--blur-bg);
-  --h: #ffffffff;
+  --h: #4c98ee;
   --border: rgba(145, 142, 142, 0.4);
 } 
 
@@ -44,28 +40,14 @@ main {
   color: var(--font);
 }
 
-
 .tabcontent, .card {
   background-color: var(--back);
   color: var(--font);
   backdrop-filter: blur(10px);
-  /* border-radius: 10px; */
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   box-shadow: 0 4px 6px var(--card-shadow);
-  /* transition: all 0.3s ease; */
 }
 
-/* .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 12px var(--card-shadow);
-} */
- /* .card-header {
-        background-color:  var(--cardheader);
-        color : var(--font);
-        margin-bottom: 10px; 
-        border-bottom: 0px;
-      }
-  */
+
   .navbar {
     background-color: var(--blur-bg);
     backdrop-filter: blur(10px);
@@ -78,25 +60,16 @@ main {
   .nav-link { 
     color: var(--font);
     font-weight: 500;
-    /* transition: all 0.2s ease; */
   }
   
   .nav-link:hover {
-    color: var(--a);
+    color: var(--h);
     text-decoration: underline;
-  }
-  
-  a, .button {
-    color: var(--a);
     cursor: pointer;
-    transition: all 0.2s ease;
   }
-  
-  /* a:hover {
-    opacity: 0.8;
-    /* text-decoration: none; */
-  } */
-  
+
+
+
   .tablinks {
     color: var(--font);
     background-color: var(--blur-bg);
@@ -107,10 +80,6 @@ main {
   text-decoration: underline;
 }
 
-.tablinks:hover {
-    background-color: var(--a);
-    color: var(--back);
-} 
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--h); 
