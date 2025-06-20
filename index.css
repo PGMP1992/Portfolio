@@ -1,5 +1,5 @@
 :root {
-  --blur-bg: rgba(233, 236, 241, 0.959);
+  --blur-bg: rgba(243, 243, 243, 0.945);
   --back: #ffffffff;
   --font: #1f1f1f;
   --h: #4c98ee;
@@ -10,7 +10,7 @@
   --blur-bg: #1e1e1f;
   --back:  rgb(23, 23, 24);
   --font: #ffffffd2;
-  --h: #4c98ee;
+  --h: #79b1f1;
   --border: rgba(145, 142, 142, 0.4);
 } 
 
@@ -68,15 +68,29 @@ main {
     cursor: pointer;
   }
 
-
-
   .tablinks {
     color: var(--font);
-    background-color: var(--blur-bg);
     padding: 8px 16px;
-}
+    border: var(--border) 2px solid;
+  }
+
+  .tablinks:hover {
+    color: var(--font);
+    text-decoration: underline;
+    transition: background-color 0.3s ease;
+    border: var(--border) 2px solid;
+  }
 
 .tablinks.active {
+  text-decoration: underline;
+}
+
+.nav-tabs {
+  background-color: var(--border);
+}
+
+.nav-tabs-:hover{
+  color: var(--h);
   text-decoration: underline;
 }
 
