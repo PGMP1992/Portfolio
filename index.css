@@ -30,6 +30,14 @@ main {
   flex: 1 0 auto;
 }
 
+svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: var(--font);
+  
+}
+
 .theme-toggle {
   cursor: pointer;
   padding: 0.5rem;
