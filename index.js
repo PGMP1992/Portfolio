@@ -1,15 +1,14 @@
 /* index.html  
 Navigation bar*/
-function openNav() {
-    document.getElementById("mySidenav").style.width = "max-width";
-
-}
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "max-width";
+// }
 
   /* index.html 
   Navigation bar*/  
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "max-width";
-  }
+// function closeNav() {
+//     document.getElementById("mySidenav").style.width = "max-width";
+//   }
 
 /* index.html 
 Opens page in content */
@@ -39,7 +38,6 @@ function openTab(evt, tabName) {
   // Work.htm  
   //Get the element with id="defaultOpen" above and click on it */ 
 function clickTab() {    
-    
     document.getElementById("defaultOpen").click();
     tabcontent = document.getElementsByClassName("tabcontent");
 
