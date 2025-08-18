@@ -8,7 +8,7 @@
 
 :root .dark-theme {
   --blur-bg: #1e1e1f;
-  --back:  rgb(23, 23, 24);
+  --back:  black;
   --font: #ffffffd2;
   --h: #97c1f1;
   --border: rgba(145, 142, 142, 0.4);
@@ -47,7 +47,7 @@ svg {
   color: var(--font);
 }
 
-.tabcontent, .card {
+.tabcontent, .card, .card-body {
   background-color: var(--back);
   color: var(--font);
   backdrop-filter: blur(10px);
