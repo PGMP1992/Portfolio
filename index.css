@@ -14,21 +14,37 @@
   --border: rgba(145, 142, 142, 0.4);
 } 
 
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: var(--blur-bg);
-  color: var(--font);
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    height: 100%;
+    font-size: 15px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blur-bg);
+    color: var(--font);
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--blur-bg);
+    color: var(--font);
 }
 
+/*Added this stop capitalization*/
+html, body, .page, main, .btn, .form-control, .form-check-input, .nav-link, .card,  * {
+    text-transform: none !important;
+}
 
 main {
   flex: 1 0 auto;
 }
+
+.container {
+  padding: 3px;
+  background-color: var(--blur-bg);
+  color: var(--font);}
 
 svg {
   width: 20px;
@@ -45,15 +61,15 @@ svg {
 .theme-toggle i {
   font-size: 1.2rem;
   color: var(--font);
+  background-color: var(--blur-bg);
 }
 
 .tabcontent, .card, .card-body {
   background-color: var(--back);
   color: var(--font);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px var(--card-shadow);
+  /* box-shadow: 0 4px 6px var(--card-shadow); */
 }
-
 
   .navbar {
     background-color: var(--blur-bg);
@@ -63,10 +79,12 @@ svg {
     width: 100%;
     z-index: 1000;
   }
-  
+
   .nav-link { 
     color: var(--font);
+    background-color: var(--blur-bg);
     font-weight: 500;
+    text-decoration: none;
   }
   
   .nav-link:hover {
@@ -75,35 +93,54 @@ svg {
     cursor: pointer;
   }
 
-  .tablinks {
+ .tablinks {
     color: var(--font);
+    background-color: var(--blur-bg);
     padding: 8px 16px;
     border: var(--border) 2px solid;
   }
 
   .tablinks:hover {
-    color: var(--font);
+    color: var(--h);
     text-decoration: underline;
-    transition: background-color 0.3s ease;
-    border: var(--border) 2px solid;
+    transition: background-color 2 ease-in-out;
   }
 
-.tablinks.active {
+.tablinks.active,
+.tablinks:active,
+.tablinks:focus,
+.tablinks.selected {
+  color: var(--h);  
   text-decoration: underline;
+} 
+
+.dark-theme .tablinks {
+    color: var(--font);
+    background-color: var(--blur-bg);
+}
+
+.dark-theme .tablinks.active,
+.dark-theme .tablinks:active,
+.dark-theme .tablinks:focus,
+.dark-theme .tablinks.selected {
+    color: var(--h);
 }
 
 .nav-tabs {
-  background-color: var(--border);
-}
-
-.nav-tabs-:hover{
-  color: var(--h);
-  text-decoration: underline;
-}
-
+  background-color: var(--blur-bg);
+  color: var(--font);
+}  
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--h); 
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -116,6 +153,17 @@ footer {
   backdrop-filter: blur(10px);
   border-top: 1px solid var(--border);
   margin-top: auto;
+  position:static;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: ;
+  height: 15px;      /* Add this line to make the bar thicker */
+  min-height: 15px; 
 }
 
 /* ------------------------------------------------------------ 
