@@ -71,7 +71,7 @@ svg {
   /* box-shadow: 0 4px 6px var(--card-shadow); */
 }
 
-  .navbar {
+.navbar {
     background-color: var(--blur-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
