@@ -1,5 +1,5 @@
 :root {
-  --blur-bg: rgba(243, 243, 243, 0.945);
+  --blur-bg: rgba(241, 243, 247, 0.925);
   --back: #ffffffff;
   --font: #1f1f1f;
   --h: #2e87ee;
@@ -7,7 +7,7 @@
 } 
 
 :root .dark-theme {
-  --blur-bg: #1e1e1f;
+  --blur-bg: #151516;
   --back:  black;
   --font: #ffffffd2;
   --h: #97c1f1;
@@ -72,7 +72,7 @@ svg {
 }
 
 .navbar {
-    background-color: var(--blur-bg);
+    background-color: var(--back);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     top: 0;
@@ -82,7 +82,7 @@ svg {
 
   .nav-link { 
     color: var(--font);
-    background-color: var(--blur-bg);
+    background-color: var(--back);
     font-weight: 500;
     text-decoration: none;
   }
