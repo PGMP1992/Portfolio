@@ -126,22 +126,17 @@ svg {
     color: var(--back);
 } 
 
-.nav-tabs {
-  background-color: var(--blur-bg);
-  color: var(--font);
-}  
-
 h1, h2, h3, h4, h5, h6 {
   color: var(--h); 
 }
 
-/* a {
+a {
   text-decoration: underline;
 }
 
 a:hover {
   text-decoration: underline;
-} */
+}
 
 footer {
   flex-shrink: 0;
