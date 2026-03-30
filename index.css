@@ -24,12 +24,13 @@ html, body {
     background-color: var(--blur-bg);
     color: var(--font);
 }
+
 .page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--blur-bg);
-    color: var(--font);
+    /* background-color: var(--blur-bg);
+    color: var(--font); */
 }
 
 /*Added this stop capitalization*/
@@ -75,8 +76,10 @@ svg {
     background-color: var(--back);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
+    /* position:fixed ; */
     top: 0;
     width: 100%;
+    height: 50px;
     z-index: 1000;
   }
 
@@ -113,6 +116,15 @@ svg {
 .dark-theme .tablinks.selected {
     color: var(--back);
 } 
+
+.title{
+  /* Fixed layout for Firefox */
+  color: var(--h);
+  font-weight: 600;
+  /* text-decoration : underline; */
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   /* Fixed layout for Firefox */

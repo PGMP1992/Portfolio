@@ -24,11 +24,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">              
             <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('home.html','content')">Home</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('about.html','content')">About</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('work.html','content')">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('projects.html','content')">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" onclick = "load_page('contact.html','content')">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
             <div class="theme-toggle">
               <!-- <i class="bi bi-sun-fill" id="theme-icon"></i> -->
@@ -37,17 +37,717 @@
                 <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
               </svg>
             </div>
+            <!-- Left Links   -->
+             <div class="d-flex align-items-center">
+              
+              <a href="https://github.com/PGMP1992/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/pedro-martinez-70077691" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin mx-1" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+              </a>
+              <a href=".\files\PMartinezCV.pdf" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down mx-1" viewBox="0 0 16 16" title="View Resume">
+                  <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z"/>
+                  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                </svg>
+              </a>
+
+            </div>
+            
           </div>
       </div>
     </nav>
     
-    <div class="page">
-      <div class="container" id="content">
-        <!-- Content will be loaded here -->
+    <!------------------------------------ 
+      Home 
+    ------------------------------------>
+    <div id="home" class="container">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-6 text-center">
+            <img src=".\images\beach.jpg" class="img-fluid rounded-start" loading="lazy" decoding="async" alt="Pedro Martinez" style="height:300px">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body mt-5" >
+            <h1>Pedro Martinez</h1>
+            <h3>Fullstack Developer</h3>
+            <div class="mt-3">
+              <h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                Ystad, Sweden
+              </h5>
+            </div>
+            <div class="mt-3">
+              <a href=".\files\PMartinezCV.pdf" download right="0" ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down mx-1" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z"/>
+                  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                </svg>Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <footer>
-        <h6>&copy;2025 pgmp.se </h6>
-      </footer>
+    </div>
+  </div>
+
+  <!------------------------------------ 
+   About 
+   ------------------------------------>
+  <div id="about" class="container">
+    <!-- <h2 class="my-3" >About</h2> -->
+             
+    <!-- Summary --------------------------------------------------->  
+    <div class="card mb-2">
+      <div class="card-body">
+         <p><b>I am a experienced software developer with certification in modern web technologies and a strong background in enterprise applications.</b></p> 
+          <!-- I have spent the last year learning as much as possible about web development.<br /> 
+          In 2024 through a intensive course at Lexicon in Malmo I got certificated in <b>.Net Core MVC</b>, <b>Rest API</b>, <b>Azure</b>, <b>Python</b> and introduction to <b>AI</b>. <br/>
+          On my own I learned <b>Blazor</b> and generative <b>AI</b> for <b>.Net</b> with <b>Azure AI services</b>.<br />
+          In the past I have worked developing client-server applications for companies such as Reuters, Bosch, and Sainsbury's in the UK to mention a few.<br />
+          Recently I have been working with <b>Django</b> which is a great web framework.</p>
       </div>
+    </div>
+     
+    <!-- Education ------------------------------------------------- -->
+    <!-- <div class="card mb-2">
+      <div class="card-body">
+        <h6>Education</h6>
+          <ul>
+            <li>2024 Systems Developer - <a href="https://lexicon.se" target="_blank">Lexicon Malmo</a></li>
+            <li>2000 Object Oriented Java Programming - <a href="https://www.capitalccg.ac.uk/westking" target="_blank">Westminster/ Kingsway College, London</a></li>
+            <li>1994 Certificate in Enterprise & Information Systems, <a href="https://www.bbk.ac.uk/" target="_blank">Birkbeck College - University of London</a></li>
+            <li>1994 C Programming and Systems Design, <a href="https://www.microtech-global.com/en/I-training.asp" target="_blank">Microtech, London</a></li>
+          </ul>
+      </div>
+    </div> -->
+
+    <!-- Tech ------------------------------------------------- -->
+    <!-- <div class="card mb-2">
+      <div class="card-body"> -->
+        <h6>Technologies</h6>
+        <ul>
+          <li>Azure, App Services, AI Services</li>
+          <li>ASP.NET Core, C#, Python, Java, C, Delphi-Pascal</li>
+          <li>Blazor, MVC, Django, Web API </li>
+          <li>SQL Server, Oracle, Interbase, SQL, LINQ</li>
+          <li>HTML, CSS, JS, Bootstrap, Tailwind, Blazor Components</li>
+        </ul>
+      </div>
+    </div>
+
+      <!-- Languages ------------------------------------------------- -->
+      <!-- <div class="card mb-2">
+        <div class="card-body">
+          <h6 class="card-header-title">Languages</h6>
+          <div class="px-2">
+            
+            <p class="d-inline-flex gap-1">
+            
+            <div class="row">
+              <div class="col-md-2">
+                <div>English 
+                  <button class="btn btn-link" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#english" 
+                    aria-expanded="false" 
+                    aria-controls="collapseWidthExample">>
+                </button>
+                </h6>
+              </div>
+
+              <div class="col">
+                <div id="english" class="progress mb-2" role="progressbar" aria-label="Info example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar text-light w-100" >Fluent</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">Spanish
+                <a class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#spanish" aria-expanded="false" aria-controls="collapseWidthExample">></a>
+              </div>
+              <div class="col">
+                <div id="spanish" class="progress mb-2" role="progressbar" aria-label="Info example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar text-light w-75" >Good</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <a class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#portuguese" aria-expanded="false" aria-controls="collapseWidthExample">Portuguese</a>
+              </div>
+              <div class="col">
+                <div id="portuguese" class="progress mb-2" role="progressbar" aria-label="Info example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar text-light w-100" >Fluent</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <a class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#swedish" aria-expanded="false" aria-controls="collapseWidthExample">Swedish</a>
+              </div>
+              <div class="col">
+                <div id="swedish" class="progress mb-2" role="progressbar" aria-label="Info example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar text-light w-50" >Basic</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      </div> -->
+
+      <!-- Certification and Courses ------------------------------------------------- -->
+      <div class="card">
+        <div class="card-body">
+          <h6 class="mt-3">Certificates/ Courses</h6>
+          <ul>
+            <li>
+              <a href=".\files\Lexicon Diplome.pdf" 
+                target="_blank">2024 Lexicon - .Net Systems Developer</a>
+            </li>
+            <li>
+              <a href=".\files\Udemy .Net Core 8.0 MVC E-Commerce 2024.pdf" 
+                target="_blank">2024 Udemy - .Net Core 8.0 MVC E-Commerce</a>
+            </li>
+
+            <li>
+              <a href=".\files\Udemy Blazor - The complete guide [.NET  9] 2024 E-commerce Diploma.pdf" 
+                target="_blank">2025 Udemy - Blazor - The complete guide [.NET  9] E-commerce</a>
+            </li>
+            <li>
+              <a href=".\files\Udemy Blazor DeepDive Diploma.pdf" 
+                target="_blank">2025 Udemy - Blazor Deep Dive - From Beginner to Advanced in .Net 8</a>
+            </li>
+
+            <li>
+              <a href=".\files\Udemy Complete Guide to Web API in .Net 8 Master API Development.pdf" 
+                target="_blank">2025 Udemy - Complete Guide to Web API in .Net 8 Master API Development</a>
+            </li>
+            
+            <li>
+              <a href=".\files\Udemy Generative AI for .NET 2025.pdf" 
+                target="_blank">2025 Udemy - Generative AI for .NET with Azure AI Services</a>
+            </li>
+          </ul>
+        </div>  
+    </div>
+  </div>
+
+  <!------------------------------------ 
+   Experience 
+   ------------------------------------>
+  <div id="work" class="container">
+      <h2 class="title">Experience</h2>
+            
+      <ul class="nav nav-tabs border-1">
+        <li class="nav-item">
+          <a class="nav-link active tablinks" onclick="openTab(event, 'scs')" >SCS AB</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link tablinks" onclick="openTab(event, 'ant')">ANT Telecom</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link tablinks" onclick="openTab(event, 'dustan')">Dustan Thomas</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link tablinks" onclick="openTab(event, 'greig')">Greig Middleton</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link tablinks" onclick="openTab(event, 'bosch')">Bosch</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link tablinks" onclick="openTab(event, 'bandprop')">BP Group</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link tablinks" onclick="openTab(event, 'reuters')">Reuters</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link tablinks" onclick="openTab(event, 'count')">Counterpoint Systems</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link tablinks" onclick="openTab(event, 'sainsburys')">Sainsburys PLC</a>
+        </li>
+      </ul>
+    
+      <!-- SCS AB ------------------->  
+      <div id="scs" class="tabcontent px-3 border-0" style="display:none">
+        <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\scs_logo.png" alt="SCS AB Logo">
+        <h5><a href="https://scservices.se/" target="_blank">SCS AB</a> </h5>
+        <h6>Certification Services</h6>
+        <!-- <h6 class="mt-4">Aug-Dec/2024</h6> -->
+        <h6>Systems Developer</h6>
+        <ul>
+          <li>E-Commerce website for Booking and Sales of Certifications, Practice and Learning Materials</li>
+          <li>Implementation of their business website using <b>.NET Core MVC</b> and <b>Sql Server</b></li>
+          <li>Integration with Stripe payments and Email Notifications</li>
+        </ul>     
+      </div>
+
+      <!-- ANT ------------------->  
+      <div id="ant" class="tabcontent px-3 border-0" style="display:none">
+        <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\ant-telecom.png" alt="ANT Telecom Logo">
+        <h5><a href="https://www.anttelecom.co.uk/" class="text-decoration-underline" target="_blank">ANT Telecom</a> </h5>
+        <h6>Electronic communications</h6>
+        <!-- <h6 class="mt-4">Feb/2002-Jun/2003</h6> -->
+        <h6>Analyst Programmer</h6>
+        <ul>
+          <li>Maintenance and implementation of <b>Units Repair</b> system using <b>Delphi 5</b> and <b>Interbase 5.5</b></li>
+        </ul>     
+      </div> 
+
+      <!-- Dunstan Thomas -------------------->
+      <div id="dustan" class="tabcontent px-3 border-0" style="display:none" >
+          <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\dustan.png" alt="Dunstan Thomas Logo">
+          <h5><a href="https://www.dthomas.co.uk/" class="text-decoration-underline" target="_blank">Dunstan Thomas Holdings Ltd</a></h5>
+          <h6> Software House</h6>
+          <!-- <h6 class="mt-4">Jan/2001-Jan/2002</h6> -->
+          <h6>IT Consultancy, Analyst Programmer</h6>
+        <ul>
+          <li>Developing both on and off site in the design and implementation of clients core business solutions</li>
+          <li><b>Delphi 5</b>, <b>Sql Server</b>,<b> Oracle</b>, <b>Interbase 5.5</b> systems analysis/design and implementation</li>
+          <li>Implementation, documentation and testing using formal development process <b>(RUP)</b> </li> 
+          <li>Development of business logic components</li>
+          <li>System and integration testing</li>
+        </ul>
+      </div>
+
+      <!-- Greig Middleton ----------------->
+      <div id="greig" class="tabcontent px-3 border-0" style="display:none" >
+          <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\report.png" alt="Greig Middleton Logo">
+          <h5><a href="https://companycheck.co.uk/company/03835036/GREIG-MIDDLETON--CO-LIMITED/companies-house-data" 
+            target="_blank">Greig  Middleton</a></h5>
+          <h6> (Company Dissolved)</h6>
+          <!-- <h6 class="mt-4">Jun-Aug/2000</h6> -->
+          <h6>Stock Exchange and Finance, Analyst Programmer</h6>
+        <ul>
+          <li>Maintenance and development of Stock Market Transfers System using <b>Delphi 5.0</b> and <b>Sql Server 6.5</b></li>
+          <li>System Analysis/Design and Database Design</li>
+        </ul>
+      </div>
+
+      <!-- Bosch ----------------------->
+      <div id="bosch" class="tabcontent px-3 border-0" style="display:none" >
+        <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\bosch.jpg" alt="Bosch Logo">
+        <h5><a href="https://www.bosch-home.co.uk/" target="_blank">Bosch UK- Telecom Dept.</a></h5>
+        <!-- <h6 class="mt-4">Nov/1999-Apr/2000</h6> -->
+        <h6>Electronic communications, Analyst Programmer</h6>
+        <ul>
+          <li>Implementation of their business core system using <b>Delphi 5</b> and <b>Interbase 5.5</b> Database</li>
+          <li>System migration from <b>Delphi 1.0</b> to <b>Delphi 5.0</b></li>
+          <li>Reports migration from <b>ReportSmith</b> to <b>QuickReport 3.05</b></li>
+          <li>Database server migration from <b>Netware</b> to <b>NT 4.0</b></li> 
+          <li>Data migration from Unix to <b>Interbase 5.5</b></li> 
+        </ul>
+      </div>
+
+      <!-- Building and Property Group ---------------------->
+      <div id="bandprop" class="tabcontent px-3 border-0" style="display:none" >
+        <img class="img-fluid rounded-start mt-4 mb-4 " src=".\images\bpg.jpg" alt="Building & Property Group Logo">
+        <h5><a href="https://www.crunchbase.com/organization/building-property-group" target="blank">Building & Property Group</a></h5>
+        <!-- <h6 class="mt-4">Sep/1998-Oct/1999</h6> -->
+        <h6>Property Management, Analyst Programmer/ Support</h6>
+        <ul>
+          <li>Maintenance and development of systems using <b>Delphi 4.0</b> and <b>Interbase 5.0</b></li>
+          <li>Creation of VCL components</li>
+          <li>Support to local and remote users</li>
+        </ul>
+      </div>
+
+      <!-- Reuters -------------------------------->
+      <div id="reuters" class="tabcontent px-3 border-0" style="display:none" >
+        <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\reuters.png" alt="Reuters Logo">
+        <h5><a href ="https://www.reuters.com/" target="_blank">Reuters </a> </h5>
+        <!-- <h6 class="mt-4">Mar/1998-Jul/1998	</h6> -->
+        <h6>Stock Exchange and Finance, Analyst Programmer</h6>
+        <ul>
+          <li><b>Delphi 3.0</b> database applications development with <b>SQL Server 6.5</b></li>
+          <li>Creation and maintenance of database VCL components</li>
+          <li>Year 2000 compliance projects, checking and fixing of <b>Delphi 3.0</b> and <b>C++</b> code</li>
+          <li>Creation of reports pointing possible problems and solutions</li>
+        </ul>
+      </div>
+
+      <!-- Counterpoint -------------------------------->
+      <div id="count" class="tabcontent px-3 border-0" style="display:none" >
+        <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\counter.png" alt="Counterpoint Systems Logo">
+        <h5><a href="https://www.crunchbase.com/acquisition/vistex-inc-acquires-counterpoint-systems--1835e526" target="_blank">
+            Counterpoint Systems</a></h5>     
+        <!-- <h6 class="mt-4">Jul/1997-Feb/1998	</h6> -->
+        <h6>Music Publishing Software House, Systems Developer</h6>
+        <ul>
+          <li><b>Delphi v1.0</b> database applications development with <b>SQL Server</b></li>
+          <li>Database Design/Modelling</li>
+        </ul>
+      </div>
+
+      <!-- Sainsburys -------------------------------->
+      <div id="sainsburys" class="tabcontent px-3 border-0" style="display:none" >
+        <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\sainsburys.png" alt="Sainsburys Logo">
+        <h5><a href = "https://www.about.sainsburys.co.uk/" target="_blank">Sainsburys Plc</a></h5> 
+        <!-- <h6 class="mt-4">1995-1997</h6> -->
+        <h6>Head Office - Retail and Finance, Systems Developer</h6>
+        <ul>
+          <li>Corporate Stock Management analysis and tools development</li>
+          <li>Creating weekly data reports to board of directors meetings using the tools developed</li>
+          <li><b>Delphi v1.0</b> database applications development with <b>Interbase 5.0/SQL</b></li>
+          <li>Data migration from <b>VMS</b> databases to relational database</li>
+        </ul>
+      </div>
+    </div>
+
+  <!------------------------------------ 
+  Projects 
+  ------------------------------------>
+<div id="projects" class="container">
+      <h2 class="title">Projects</h2>
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-2">
+      
+      <!-- Blazor Activities ------------------------------>
+      <div class="card p-2 m-2">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <h6><a href="http://www.act.pgmp.se/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right mx-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg>Events
+              <img src="./images/activities_screen.png" class="card-img-top p-2"  />
+            </a></h6>
+          </div>
+          <div class="col-auto">
+            <div class="px-2 mt-4">
+              <h6>Social Media Events Website</h6>
+              <ul>
+                <li>ASP.NET Core</li>
+                <li>Blazor SSR and Server Interactivity</li>
+                <li>SQL Server</li>
+                <li>Cloudinary for managing website images</li>
+                <li>Bootstrap and Radzen Components UI</li>
+                <li>Email Notifications</li>
+              </ul>
+              <p >Obs: Website under development, new features coming daily.</p>
+
+              <a href="https://github.com/PGMP1992/Activities" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Yumm ----------------------------   -->
+      <div class="card p-2 m-2" >
+        <div class="row g-0">
+          <div class="col-md-6">
+            <h6><a href="https://yumm.pgmp.se/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right mx-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg>Yumm
+              <img src="./images/yumm_screen.png" class="card-img-top p-2" />
+            </a></h6>
+          </div>
+          <div class="col-auto">
+            <div class="px-2 mt-4">
+              <h6>E-Commerce Website for Restaurant Orders</h6>
+              <ul>
+                <li>ASP.NET Core</li>
+                <li>Blazor SSR and Server Interactivity</li>
+                <li>SQL Server</li>
+                <li>Cloudinary for managing website images</li>
+                <li>Bootstrap and Radzen Components UI</li>
+                <li>Integration with Stripe payments</li>
+                <li>Email Notifications</li>
+              </ul>
+              <a href="https://github.com/PGMP1992/YumBlazor" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCS ----------------------------   -->
+      <div class="card m-2 p-2">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <h6><a href="https://scservices.se/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right  mx-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg>SCS AB
+              <img src="./images/scs_screen.png" class="card-img-top p-2" />
+            </a></h6>
+          </div>
+          <div class="col-auto">
+            <div class="px-2 mt-4">
+              <h6>Internship Project - Scandinavian Certification Services</h6>
+              <h6>E-Commerce Website for Sale of Certifications, Practice and Learning Materials</h6>
+              <ul>
+                <li>ASP.NET Core MVC</li>
+                <li>N-Tier Architeture</li>
+                <li>SQL Server</li>
+                <li>Bootstrap</li>
+                <li>Integration with Stripe payments</li>
+                <li>Email Notifications</li>
+              </ul>
+              <!-- <p class="text-danger">Website deployed without a valid SSL Certificate</p>   -->
+              <a href="https://github.com/PGMP1992/scs" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>Github</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movies ----------------------------   -->
+      <div class="card m-2 p-2">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <h6><a href="https://movies.pgmp.se/" class="pt-3" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right  mx-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg>Movies
+              <img src="./images/movies_screen.png" class="card-img-top p-2" />
+            </a></h6>
+          </div>
+          <div class="col-auto">
+          <div class="px-2 mt-4">
+            <h6>Lexicon - Systems Developer Course, Final Project </h6>
+            <h6>Website for Movies, Playlists and Social Network. </h6>
+            <ul>
+              <li>ASP.NET Core MVC</li>
+              <li>SQL Server</li>
+              <li>Rest API with Scalar UI</li>
+              <li>Clean Architecture</li>
+              <li>Cloudinary for managing website images</li>
+              <li>Bootstrap</li>
+            </ul>
+            <!-- <p class="text-danger">Obs: Website deployed without a valid SSL Certificate</p> -->
+            <a href="https://github.com/PGMP1992/Movies" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>Github</a>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- AE ----------------------------   -->
+      <div class="card m-2 p-2">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <h6><a href="https://pgmp1992.github.io/AE/" class="pt-3" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right  mx-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg>Arte no Escuro
+              <img src="./images/ae_screen.png" class="card-img-top p-2" />
+            </a></h6>
+          </div>
+          <div class="col-auto">
+            <div class="px-2 mt-4">
+              <h6>Website for my old band. </h6>
+              <ul>
+                <li>HTML, JS</li>
+                <li>CSS, Bootstrap</li>
+              </ul>
+              <a href="https://github.com/PGMP1992/AE" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                  </svg>Github</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Books ----------------------------   -->
+      <div class="card m-2 p-2">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <h6><a href="https://books.pgmp.se/" class="pt-3" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right  mx-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg>Books
+              <img src="./images/books_screen.png" class="card-img-top p-2" />
+            </a></h6>
+          </div>
+          <div class="col-auto">
+            <div class="px-2 mt-4">    
+              <h6>E-Commerce Website for Bulk Sale of Books</h6>
+              <ul>
+                <li>ASP.NET Core MVC</li>
+                <li>N-Tier Architeture</li>
+                <li>SQL Server</li>
+                <li>Bootstrap</li>
+                <li>Importing Book data using Open Library API</li>
+                <li>Cloudinary for managing website images</li>
+                <li>Integration with Stripe payments</li>
+                <li>Email Notifications</li>
+              </ul>
+              <!-- <p class="text-danger">Website deployed without a valid SSL Certificate</p>   -->
+              <a href="https://github.com/PGMP1992/Bulky_MVC" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>Github</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activities ----------------------------   -->
+      <!-- <div class="card m-2 p-2">
+        <h6><a href="https://github.com/PGMP1992/Reactivities" class="p-2" target="_blank">
+          Activities
+        </a></h6>
+        <div class="px-3">
+          <h6>React Social Network App</h6>
+          <ul>
+            <li>React</li>
+            <li>Vite</li>
+            <li>Clean Architeture</li>
+            <li>Minimun APIs</li>
+            <li>MobX</li>
+            <li>Typescript</li>
+            <li>Semantic UI</li>
+            <li>SQlite</li>
+          </ul>
+          <a href="https://github.com/PGMP1992/Reactivities" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>Github</a>
+        </div>
+      </div> -->
+
+      <!-- React-Port ----------------------------   -->
+      <!-- <div class="card m-2 p-2">
+        <h6><a href="https://github.com/PGMP1992/Portfolio-React" class="p-2" target="_blank">
+          Portfolio-React
+        </a></h6>
+        <div class="px-3">
+          <h6>Simple Portfolio Writen in React</h6>
+          <ul>
+            <li>Routing and Layouts</li>
+            <li>Styling with CSS</li>
+          </ul>
+          <a href="https://github.com/PGMP1992/Portfolio-React" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>Github</a>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+  <!------------------------------------ 
+   Contact 
+   ------------------------------------>
+
+  <div id="contact" class="container">
+        <h2 class="title">Contact</h2>
+
+        <div class="card">
+            <div class="card-body">
+            <div class="row g-4">
+                <div class="col-md-6">
+                  <iframe class="shadow-3-strong rounded-7"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9056.10879632761!2d13.817798909887562!3d55.427319166417284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46547d5b88dcc2a3%3A0x91c6e3c26c25954e!2sLingsgatan%2C%20271%2042%20Ystad%2C%20Sweden!5e0!3m2!1sen!2sde!4v1774781769078!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <div class="row col-8 mt-3 text-center w-75 mx-auto"> -->
+                        <!-- <img src="./images/map.jpg" class="img-fluid rounded-start" loading="lazy" decoding="async"></img>     -->
+                </div>  
+                    
+                <div class="col-md-6 mt-5">
+                    <div class="row mb-3">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg>
+                            Ystad 271 42, Sweden
+                        </h6>
+                    </div>
+                
+                    <div class="row mb-3">
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                            +46 (0)728 439172
+                        </h6>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4 g-2 mt-3">
+                        <div class="col">
+                            <a href="mailto:pedro@dkltd.net">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at mx-1" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                                    </svg>Email
+                                </span>
+                            </a>
+                        </div>    
+                        <div class="col">
+                            <a href=".\files\PMartinezCV.pdf" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down mx-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                    <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>Resume
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.linkedin.com/in/pedro-martinez-70077691" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin mx-1" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>LinkedIn
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/PGMP1992/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>Github
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        </div>
+    </div>
+    
+    <footer>
+      <h6>&copy;&nbsp;2024 pgmp.se </h6>
+    </footer>
   </body>
 </html>

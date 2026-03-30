@@ -1,15 +1,3 @@
-/* index.html  
-Navigation bar*/
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "max-width";
-// }
-
-  /* index.html 
-  Navigation bar*/  
-// function closeNav() {
-//     document.getElementById("mySidenav").style.width = "max-width";
-//   }
-
 /* index.html 
 Opens page in content */
 function load_page(page, elementId) {
@@ -65,9 +53,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
-
-
-
-
-
-
