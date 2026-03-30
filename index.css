@@ -21,16 +21,16 @@ html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: var(--blur-bg);
-    color: var(--font);
+    /* background-color: var(--blur-bg);
+    color: var(--font); */
 }
 
 .page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    /* background-color: var(--blur-bg);
-    color: var(--font); */
+    /* min-height: 100vh; */
+    background-color: var(--blur-bg);
+    color: var(--font); 
 }
 
 /*Added this stop capitalization*/
