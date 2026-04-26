@@ -23,14 +23,14 @@ html, body {
     padding: 0;
     /* background-color: var(--blur-bg);
     color: var(--font); */
-}
+} 
 
 .page {
     display: flex;
     flex-direction: column;
     /* min-height: 100vh; */
-    background-color: var(--blur-bg);
-    color: var(--font); 
+    /* background-color: var(--blur-bg);
+    color: var(--font);  */
 }
 
 /*Added this stop capitalization*/
@@ -43,7 +43,6 @@ main {
 }
 
 .container {
-  padding: 3px;
   background-color: var(--blur-bg);
   color: var(--font);}
 
@@ -83,39 +82,39 @@ svg {
     z-index: 1000;
   }
 
-  .nav-link { 
+   .nav-link { 
     color: var(--h);
     background-color: var(--back);
     font-weight: 600;
     text-decoration: none;
   }
   
-  .nav-link:hover {
-    color: var(--h);
+  /* .nav-link:hover {
+    /* color: var(--h); 
     text-decoration: underline;
     cursor: pointer;
-  }
+  } */
 
  .tablinks {
     color: var(--font);
     background-color: var(--blur-bg);
-    font-weight: 600;
-    padding: 8px 16px;
-    border: var(--border) 2px solid;
+    font-weight: 600; 
+    /* padding: 8px 16px; */
+    /* border: var(--border) 2px solid; */
   }
 
  
-.dark-theme .tablinks {
-    color: var(--font);
-    background-color: var(--blur-bg);
+.dark-theme{
+    color: var(--h); 
+    background-color: var(--back);
 }
 
-.dark-theme .tablinks.active,
-.dark-theme .tablinks:active,
+/* .dark-theme .tablinks.active,
 .dark-theme .tablinks:focus,
 .dark-theme .tablinks.selected {
-    color: var(--back);
-} 
+    color: var(--blur-bg);
+    background-color: var(--font);
+}   */
 
 .title{
   /* Fixed layout for Firefox */
