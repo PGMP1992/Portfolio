@@ -33,7 +33,7 @@ html, body {
     color: var(--font);  */
 }
 
-/*Added this stop capitalization*/
+/*Added this stop MDB capitalization on buttons, etc*/
 html, body, .page, main, .btn, .form-control, .form-check-input, .nav-link, .card,  * {
     text-transform: none !important;
 }
@@ -89,11 +89,11 @@ svg {
     text-decoration: none;
   }
   
-  /* .nav-link:hover {
-    /* color: var(--h); 
+  .nav-link:hover, .nav-item:hover {
+    color: var(--h); 
     text-decoration: underline;
     cursor: pointer;
-  } */
+  }
 
  .tablinks {
     color: var(--font);
