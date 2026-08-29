@@ -14,6 +14,36 @@ document.addEventListener("DOMContentLoaded", function() {
   load_page("home.html", "content");
 });
 
+// Burger menu toggle for mobile - shows/hides sidebar nav
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerToggle = document.getElementById('burger-toggle');
+  const sidebarNav = document.getElementById('sidebar-nav');
+  const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+  function closeSidebar() {
+    burgerToggle.classList.remove('active');
+    sidebarNav.classList.remove('active');
+    sidebarOverlay.classList.remove('active');
+    burgerToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleSidebar() {
+    const isOpen = sidebarNav.classList.toggle('active');
+    burgerToggle.classList.toggle('active', isOpen);
+    sidebarOverlay.classList.toggle('active', isOpen);
+    burgerToggle.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  burgerToggle.addEventListener('click', toggleSidebar);
+  sidebarOverlay.addEventListener('click', closeSidebar);
+
+  // Close the menu after selecting a nav link on mobile
+  sidebarNav.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+  });
+});
+
+
 /* Work.htm  
 onclick shows selected tab */ 
 function openTab(evt, tabName) {
@@ -37,19 +67,48 @@ function clickTab() {
 
 // Switch themes dark-light mode
 document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.getElementById('theme-icon');
   
-  themeIcon.addEventListener('click', function() {
+  themeToggle.addEventListener('click', function() {
       document.body.classList.toggle('dark-theme');
       if (document.body.classList.contains('dark-theme')) {
-          themeIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-sun-fill" viewBox="0 0 16 16">
+          themeIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-sun-fill" viewBox="0 0 16 16">
               <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
             </svg>`;
       } else {
-          themeIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+          themeIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
               <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
               <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
             </svg>`;
       }
   });
 });
+
+// Projects dropdown toggle
+function toggleProjectDescription(event) {
+  const button = event.currentTarget;
+  const description = button.nextElementSibling;
+  
+  // Hide all other descriptions and remove active class from buttons
+  document.querySelectorAll('.project-description').forEach(desc => {
+    if (desc !== description) {
+      desc.style.display = 'none';
+    }
+  });
+  
+  document.querySelectorAll('.project-header').forEach(btn => {
+    if (btn !== button) {
+      btn.classList.remove('active');
+    }
+  });
+  
+  // Toggle current description
+  if (description.style.display === 'none' || description.style.display === '') {
+    description.style.display = 'block';
+    button.classList.add('active');
+  } else {
+    description.style.display = 'none';
+    button.classList.remove('active');
+  }
+}
