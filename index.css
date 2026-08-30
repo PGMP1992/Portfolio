@@ -1,420 +1,219 @@
 :root {
   --blur-bg: rgba(241, 243, 247, 0.925);
-  --back: #ffffffff;
+  --back: #fff;
   --font: #1f1f1f;
-  --h: #000000;
+  --h: #000;
   --border: rgba(0, 0, 0, 0.1);
-} 
+  --hover: rgba(0, 0, 0, 0.05);
+}
 
-:root .dark-theme {
-  --blur-bg: #151516;
-  --back:  black;
-  --font: #dddfe9e0;
-  --h: #ffffff;
-  --border: rgba(145, 142, 142, 0.4);
-} 
+.dark-theme {
+  --blur-bg: #232325;
+  --back: #000;
+  --font: #dddfe9;
+  --h: #fff;
+  --border: rgb(93, 92, 97);
+  --hover: rgba(255, 255, 255, 0.1);
+  color: var(--h);
+  background-color: var(--back);
+}
 
-html, body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    height: 100%;
-    font-size: 15px;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    /* background-color: var(--blur-bg);
-    color: var(--font); */
+* {
+  text-transform: none !important;
+}
+
+html {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-} 
-
-.page {
-    display: flex;
-    flex-direction: column;
-    /* min-height: 100vh; */
-    /* background-color: var(--blur-bg);
-    color: var(--font);  */
-}
-
-/*Added this stop MDB capitalization on buttons, etc*/
-html, body, .page, main, .btn, .form-control, .form-check-input, .nav-link, .card,  * {
-    text-transform: none !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  border: 1px solid var(--border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
 }
 
 .layout-wrapper {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 .sidebar-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: var(--back);
-    backdrop-filter: blur(10px);
-    border-right: 1px solid var(--border);
-    overflow-y: auto;
-    z-index: 999;
-    padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 250px;
+  height: 100vh;
+  padding: 20px 0;
+  overflow-y: auto;
+  background-color: var(--back);
+  border-right: 1px solid var(--border);
 }
 
 .sidebar-content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0 15px;
-}
-
-.sidebar-header {
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 15px;
 }
 
 .sidebar-nav-menu {
-    list-style: none;
-    padding: 20px 0;
-    margin: 0;
-    flex-shrink: 0;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
 }
 
 .sidebar-nav-menu li {
-    margin: 8px 0;
+  margin: 8px 0;
+}
+
+.nav-link {
+  color: var(--h);
+  background-color: var(--back);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .sidebar-nav-menu .nav-link {
-    display: block;
-    padding: 10px 12px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    background-color: transparent;
-}
-
-.sidebar-nav-menu .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    text-decoration: none;
-}
-
-.dark-theme .sidebar-nav-menu .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 10px 12px;
+  background-color: transparent;
+  border-radius: 4px;
 }
 
 .sidebar-social {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .social-links {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .social-links .nav-link {
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
 }
 
-.social-links .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.dark-theme .social-links .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.sidebar-nav-menu .nav-link:hover,
+.social-links .nav-link:hover,
+.theme-toggle-btn:hover,
+.project-header:hover {
+  color: var(--h);
+  background-color: var(--hover);
+  text-decoration: none;
 }
 
 .sidebar-theme {
-    text-align: center;
-    padding-top: 10px;
-    border-top: 1px solid var(--border);
+  padding-top: 10px;
+  text-align: center;
+  border-top: 1px solid var(--border);
 }
 
 .theme-toggle-btn {
-    background: none;
-    border: 1px solid var(--border);
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--font);
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.theme-toggle-btn:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.dark-theme .theme-toggle-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 12px;
+  color: var(--font);
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
 }
 
 .main-content {
-    flex: 1;
-    margin-left: 250px;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 250px;
 }
 
 .container {
-  background-color: var(--blur-bg);
-  color: var(--font);
   max-width: 100%;
+  color: var(--font);
+  background-color: var(--blur-bg);
+}
+
+.tabcontent,
+.card,
+.card-body {
+  color: var(--font);
+  background-color: var(--back);
+}
+
+.tablinks {
+  color: var(--font);
+  background-color: var(--blur-bg);
+  font-weight: 600;
+}
+
+.title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--h);
+  font-weight: 600;
+}
+
+.title {
+  margin: 20px 0 15px;
+}
+
+a,
+a:hover {
+  text-decoration: underline;
 }
 
 svg {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  /* fill: var(--font); */
-}
-
-.theme-toggle {
-  cursor: pointer;
-  padding: 0.5rem;
-  display: none;
-}
-
-.theme-toggle i {
-  font-size: 1.2rem;
-  color: var(--font);
-  background-color: var(--blur-bg);
-}
-
-.tabcontent, .card, .card-body {
-  background-color: var(--back);
-  color: var(--font);
-  backdrop-filter: blur(10px);
-  /* box-shadow: 0 4px 6px var(--card-shadow); */
-}
-
-.navbar {
-    display: none;
-}
-
-   .nav-link { 
-    color: var(--h);
-    background-color: var(--back);
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover, .nav-item:hover {
-    color: var(--h); 
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
- .tablinks {
-    color: var(--font);
-    background-color: var(--blur-bg);
-    font-weight: 600; 
-    /* padding: 8px 16px; */
-    /* border: var(--border) 2px solid; */
-  }
-
- 
-.dark-theme{
-    color: var(--h); 
-    background-color: var(--back);
-}
-
-/* .dark-theme .tablinks.active,
-.dark-theme .tablinks:focus,
-.dark-theme .tablinks.selected {
-    color: var(--blur-bg);
-    background-color: var(--font);
-}   */
-
-.title{
-  /* Fixed layout for Firefox */
-  color: var(--h);
-  font-weight: 600;
-  /* text-decoration : underline; */
-  margin-bottom: 15px;
-  margin-top: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  /* Fixed layout for Firefox */
-  color: var(--h);
-  font-weight: 600;
-}
-
-a {
-  text-decoration: underline;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 footer {
-  flex-shrink: 0;
-  padding: 10px 0;
   width: 100%;
-  text-align: center;
-  color: var(--font);
-  background-color: var(--blur-bg);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid var(--border);
   margin-top: auto;
-  position: static;
   margin-left: 250px;
+  padding: 10px 0;
+  color: var(--font);
+  text-align: center;
+  background-color: var(--blur-bg);
+  border-top: 1px solid var(--border);
 }
 
-.progress {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  font-weight: 500;
-  font-size: 14px;
-  height: 15px;      /* Add this line to make the bar thicker */
-  min-height: 15px; 
-}
-
-/* ------------------------------------------------------------ 
-Text below is old CSS that was used before adopting Bootstrap 
--------------------------------------------------------------*/
-/* Hover effect styling for interactivity 
-    */ 
-/* .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-} */
-
-/* .sidenav{
-  position: sticky;
-  padding: 10px;
-  top: 0px;
-  background-color: var(--banner);
-}
-
-.sidenav a{
-  color: var(--invertfont); 
-  text-decoration: none;
-  transition: 0.3s;
-  padding: 0px 10px;
-}
-
-.sidenav a:hover{
-  color: var(--invertfont);
-  background-color: var(--a); 
-}
-
-.tablinks{
-  position: sticky;
-  padding: 10px;
-  top: 0px;
-  color: var(--a);
-  text-decoration: none;
-}
-
-.tab a {
-  color: var(--a); 
-  text-decoration: none;
-  transition: 0.3s;
-  padding: 0px 10px;
-}
-
-.tab a:hover{
-  background-color: var(--a);
-  color: var(--invertfont); 
-  transition: 0.3s;
-  padding: 0px 10px;
-}
-
-/* Contact ------------------------
-#map {
-  width:100%;
-  height: auto;
-  margin-right: 2%;
-}
-
-  /* Style inputs 
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 7px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: var(--font);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: var(--a);
-  }
-
-  /* Style the bottom navigation bar
-#bottomnav {
-  overflow: hidden;
-  background-color: var(--back);
-  color: var(--a);
-}
-
-/* Style the nav links 
-.bottomnav a {
-  float: left;
-  display: block;
-  color:var(--a);
-  text-decoration: none;
-  padding: 10px;
-}
-
-.bottomnav a:hover {
-  color: var(--invertfont);
-  background-color: var(--a)
-}
-
-.bottomnav img {
-  width: 20px; 
-  height: 20px; 
-  float:left;
-}
-
-footer {
-  bottom: 0;
-  position: fixed;
-} */
-
-/* ========================================
-   Burger menu toggle
-   ======================================== */
-.mobile-topbar {
+.mobile-topbar,
+.sidebar-overlay {
   display: none;
   position: fixed;
+}
+
+.mobile-topbar {
   top: 0;
   left: 0;
+  z-index: 1001;
+  align-items: center;
   width: 100%;
   height: 56px;
-  align-items: center;
   padding: 0 15px;
   background-color: var(--back);
   border-bottom: 1px solid var(--border);
-  z-index: 1001;
 }
 
 .burger-toggle {
@@ -424,11 +223,11 @@ footer {
   gap: 5px;
   width: 42px;
   height: 42px;
+  padding: 0;
+  cursor: pointer;
   background-color: var(--back);
   border: 1px solid var(--border);
   border-radius: 4px;
-  cursor: pointer;
-  padding: 0;
 }
 
 .burger-bar {
@@ -453,26 +252,59 @@ footer {
 }
 
 .sidebar-overlay {
-  display: none;
-  position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 998;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .sidebar-overlay.active {
   display: block;
 }
 
-/* ========================================
-   Responsive Design - Mobile/Tablet Screens
-   ======================================== */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 15px;
+  color: var(--h);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  background-color: var(--back);
+  border: none;
+}
+
+.chevron-icon {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-header.active .chevron-icon {
+  transform: rotate(90deg);
+}
+
+.project-description {
+  padding: 15px;
+  animation: slide-down 0.3s ease;
+}
+
+@keyframes slide-down {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 @media (max-width: 768px) {
   html {
     scroll-padding-top: 56px;
   }
 
-  #home, #about, #work, #projects, #contact {
+  #home,
+  #about,
+  #work,
+  #projects,
+  #contact {
     scroll-margin-top: 56px;
   }
 
@@ -481,7 +313,6 @@ footer {
   }
 
   .sidebar-nav {
-    width: 250px;
     top: 56px;
     height: calc(100vh - 56px);
     transform: translateX(-100%);
@@ -493,8 +324,8 @@ footer {
   }
 
   .main-content {
-    margin-left: 0;
     margin-top: 56px;
+    margin-left: 0;
   }
 
   footer {
@@ -514,7 +345,6 @@ footer {
   .sidebar-nav {
     width: 180px;
     padding: 15px 0;
-    transform: translateX(-100%);
   }
 
   .sidebar-nav-menu li {
@@ -526,81 +356,12 @@ footer {
     font-size: 14px;
   }
 
-  .main-content {
-    margin-left: 0;
-  }
-
-  footer {
-    margin-left: 0;
-  }
-
   .container {
     padding: 0.75rem !important;
-  }
-
-  .sidebar-header h5 {
-    font-size: 18px;
   }
 
   svg {
     width: 18px;
     height: 18px;
-  }
-}
-
-/* ========================================
-   Projects Dropdown Styling
-   ======================================== */
-.project-header {
-  width: 100%;
-  padding: 12px 15px;
-  background-color: var(--back);
-  border: none;
-  border-bottom: 1px solid var(--border);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--h);
-  transition: all 0.3s ease;
-  text-align: left;
-}
-
-.project-header:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.dark-theme .project-header:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.chevron-icon {
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
-  width: 20px;
-  height: 20px;
-}
-
-.project-header.active .chevron-icon {
-  transform: rotate(90deg);
-}
-
-.project-description {
-  padding: 15px;
-  animation: slideDown 0.3s ease;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-  to {
-    opacity: 1;
-    max-height: 500px;
-    overflow: visible;
   }
 }
