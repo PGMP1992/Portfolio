@@ -20,7 +20,9 @@
           <span class="burger-bar"></span>
         </button>
       </div>
-      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      
+      <div class="sidebar-overlay" id="sidebar-overlay">
+      </div>
 
       <!-- Left Sidebar Navigation -->
       <nav class="sidebar-nav" id="sidebar-nav">
@@ -74,246 +76,245 @@
         </div>
       </nav>
 
-      <!----------------------------------- 
-      Main Content 
-      ------------------------------------>
       <main class="main-content">
     
         <!------------------------------------ 
         Home 
         ---------------------------------- -->
-        <div id="home" class="p-2">
-          <div class="row g-0">
-            
-            <div class="col-md-6 text-center">
-                <img src=".\images\beach.jpg" class="img-fluid " loading="lazy" decoding="async" alt="Pedro Martinez" style="height:300px">
-            </div>
+        <div id="home" class="container mb-2">
+          <div class="card">
+            <div class="row g-0">
+              
+              <div class="col-md-6 text-center">
+                  <img src=".\images\beach.jpg" class="img-fluid " loading="lazy" decoding="async" alt="Pedro Martinez" style="height:300px; width:300px;">
+              </div>
 
-            <div class="col-md-6">
-              <div class="card-body px-5 mt-5" >
-                <h1>Pedro Martinez</h1>
-                <h3>Fullstack Developer</h3>
-                <div class="mt-3">
-                  <h5>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-                    </svg>
-                    Ystad, Sweden
-                  </h5>
-                </div>
-                <div class="mt-3">
-                  <a href="./files/PMartinezCV.pdf" download>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down mx-1" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z"/>
-                      <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
-                    </svg>
-                    <!-- <img src="/svgs/cloud-arrow-down.svg" class="me-1" /> -->
-                    Download Resume 
-                  </a>
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body px-5 mt-5" >
+                  <h1>Pedro Martinez</h1>
+                  <h3>Fullstack Developer</h3>
+                  <div class="mt-3">
+                    <h5>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                      </svg>
+                      Ystad, Sweden
+                    </h5>
+                  </div>
+                  <div class="mt-3">
+                    <a href="./files/PMartinezCV.pdf" download>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down mx-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z"/>
+                        <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                      </svg>
+                      <!-- <img src="/svgs/cloud-arrow-down.svg" class="me-1" /> -->
+                      Download Resume 
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="p-2 text-center">
-          <p><b>I am a experienced software developer with certification in modern web technologies and a strong background in enterprise applications.</b></p> 
-        </div> 
+          </div> <!-- Close card -->
+        </div>     
           
-        <!--------------------------------- 
-        Tech 
-        --------------------------------- -->
-        <div class="px-4">
-          <h6>Technologies</h6>
-          <ul>
-            <li>Azure, App Services, AI Services</li>
-            <li>ASP.NET Core, C#, Python, Java, C, Delphi-Pascal</li>
-            <li>Blazor, MVC, Django, Web API </li>
-            <li>SQL Server, Oracle, Interbase, SQL, LINQ</li>
-            <li>HTML, CSS, JS, Bootstrap, Tailwind, Blazor Components</li>
-          </ul>
-        </div>
+          <div class="container "  >
+              <div class="card-body p-4">
+                <p><b>I am a experienced software developer with certification in modern web technologies and a strong background in enterprise applications.</b></p> 
+                
+                <div>
+                  <h6>Technologies</h6>
+                  <ul>
+                    <li>Azure, App Services, AI Services</li>
+                    <li>ASP.NET Core, C#, Python, Java, C, Delphi-Pascal</li>
+                    <li>Blazor, MVC, Django, Web API </li>
+                    <li>SQL Server, Oracle, Interbase, SQL, LINQ</li>
+                    <li>HTML, CSS, JS, Bootstrap, Tailwind, Blazor Components</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
         
         <!---------------------------------- 
         Experience 
         ---------------------------------- -->
         <div id="work" class="container">
-            <h2 class="title">Experience</h2>
-            <div class="border-light">      
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info active " aria-current="page " onclick="openTab(event, 'scs')" id="defaultOpen" >SCS AB</a>
-              </li>
+          <h3 class="title">Experience</h3>
+          <div class="border-light">      
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info active " aria-current="page " onclick="openTab(event, 'scs')" id="defaultOpen" >SCS AB</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'ant')">ANT Telecom</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'ant')">ANT Telecom</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'dustan')">Dustan Thomas</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'greig')">Greig Middleton</a>
               
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'dustan')">Dustan Thomas</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'greig')">Greig Middleton</a>
-                
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'bosch')">Bosch</a>
-              </li>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'bosch')">Bosch</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'bandprop')">BP Group</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'reuters')">Reuters</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'bandprop')">BP Group</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'reuters')">Reuters</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'count')">Counterpoint Systems</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'count')">Counterpoint Systems</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link tablinks text-info" onclick="openTab(event, 'sainsburys')">Sainsburys PLC</a>
+            </li>
+          </ul>
+
+        <!-- </div> -->
+          <!-- SCS AB ------------------->  
+          <div id="scs" class="tabcontent p-3 border-1" >
+            <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\scs_logo.png" alt="SCS AB Logo">
+            <h5><a href="https://scservices.se/" target="_blank">SCS AB 
               
-              <li class="nav-item">
-                <a class="nav-link tablinks text-info" onclick="openTab(event, 'sainsburys')">Sainsburys PLC</a>
-              </li>
+            </a> </h5>
+            <h6>Certification Services</h6>
+            <!-- <h6 class="mt-4">Aug-Dec/2024</h6> -->
+            <h6>Systems Developer</h6>
+            <ul>
+              <li>E-Commerce website for Booking and Sale of Certifications, Practice and Learning Materials</li>
+              <li>Implementation of their business website using <b>.NET Core MVC</b> and <b>Sql Server</b></li>
+              <li>Integration with Stripe payments and Email Notifications</li>
+            </ul>     
+          </div>
+
+          <!-- ANT ------------------->  
+          <div id="ant" class="tabcontent p-3 border-1" style="display:none">
+            <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\ant-telecom.png" alt="ANT Telecom Logo">
+            <h5><a href="https://www.anttelecom.co.uk/" class="text-decoration-underline" target="_blank">ANT Telecom</a> </h5>
+            <h6>Electronic communications</h6>
+            <!-- <h6 class="mt-4">Feb/2002-Jun/2003</h6> -->
+            <h6>Analyst Programmer</h6>
+            <ul>
+              <li>Maintenance and implementation of <b>Units Repair</b> system using <b>Delphi 5</b> and <b>Interbase 5.5</b></li>
+            </ul>     
+          </div> 
+
+          <!-- Dunstan Thomas -------------------->
+          <div id="dustan" class="tabcontent p-3 border-0" style="display:none" >
+              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\dustan.png" alt="Dunstan Thomas Logo">
+              <h5><a href="https://www.dthomas.co.uk/" class="text-decoration-underline" target="_blank">Dunstan Thomas Holdings Ltd</a></h5>
+              <h6> Software House</h6>
+              <!-- <h6 class="mt-4">Jan/2001-Jan/2002</h6> -->
+              <h6>IT Consultancy, Analyst Programmer</h6>
+            <ul>
+              <li>Developing both on and off site in the design and implementation of clients core business solutions</li>
+              <li><b>Delphi 5</b>, <b>Sql Server</b>,<b> Oracle</b>, <b>Interbase 5.5</b> systems analysis/design and implementation</li>
+              <li>Implementation, documentation and testing using formal development process <b>(RUP)</b> </li> 
+              <li>Development of business logic components</li>
+              <li>System and integration testing</li>
             </ul>
+          </div>
 
-          <!-- </div> -->
-            <!-- SCS AB ------------------->  
-            <div id="scs" class="tabcontent p-3 border-1" >
-              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\scs_logo.png" alt="SCS AB Logo">
-              <h5><a href="https://scservices.se/" target="_blank">SCS AB 
-                
-              </a> </h5>
-              <h6>Certification Services</h6>
-              <!-- <h6 class="mt-4">Aug-Dec/2024</h6> -->
-              <h6>Systems Developer</h6>
-              <ul>
-                <li>E-Commerce website for Booking and Sale of Certifications, Practice and Learning Materials</li>
-                <li>Implementation of their business website using <b>.NET Core MVC</b> and <b>Sql Server</b></li>
-                <li>Integration with Stripe payments and Email Notifications</li>
-              </ul>     
-            </div>
-
-            <!-- ANT ------------------->  
-            <div id="ant" class="tabcontent p-3 border-1" style="display:none">
-              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\ant-telecom.png" alt="ANT Telecom Logo">
-              <h5><a href="https://www.anttelecom.co.uk/" class="text-decoration-underline" target="_blank">ANT Telecom</a> </h5>
-              <h6>Electronic communications</h6>
-              <!-- <h6 class="mt-4">Feb/2002-Jun/2003</h6> -->
-              <h6>Analyst Programmer</h6>
-              <ul>
-                <li>Maintenance and implementation of <b>Units Repair</b> system using <b>Delphi 5</b> and <b>Interbase 5.5</b></li>
-              </ul>     
-            </div> 
-
-            <!-- Dunstan Thomas -------------------->
-            <div id="dustan" class="tabcontent p-3 border-0" style="display:none" >
-                <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\dustan.png" alt="Dunstan Thomas Logo">
-                <h5><a href="https://www.dthomas.co.uk/" class="text-decoration-underline" target="_blank">Dunstan Thomas Holdings Ltd</a></h5>
-                <h6> Software House</h6>
-                <!-- <h6 class="mt-4">Jan/2001-Jan/2002</h6> -->
-                <h6>IT Consultancy, Analyst Programmer</h6>
-              <ul>
-                <li>Developing both on and off site in the design and implementation of clients core business solutions</li>
-                <li><b>Delphi 5</b>, <b>Sql Server</b>,<b> Oracle</b>, <b>Interbase 5.5</b> systems analysis/design and implementation</li>
-                <li>Implementation, documentation and testing using formal development process <b>(RUP)</b> </li> 
-                <li>Development of business logic components</li>
-                <li>System and integration testing</li>
-              </ul>
-            </div>
-
-            <!-- Greig Middleton ----------------->
-            <div id="greig" class="tabcontent p-3 border-0" style="display:none" >
-                <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\report.png" alt="Greig Middleton Logo">
-                <h5><a href="https://companycheck.co.uk/company/03835036/GREIG-MIDDLETON--CO-LIMITED/companies-house-data" 
-                  target="_blank">Greig  Middleton</a></h5>
-                <h6> (Company Dissolved)</h6>
-                <!-- <h6 class="mt-4">Jun-Aug/2000</h6> -->
-                <h6>Stock Exchange and Finance, Analyst Programmer</h6>
-              <ul>
-                <li>Maintenance and development of Stock Market Transfers System using <b>Delphi 5.0</b> and <b>Sql Server 6.5</b></li>
-                <li>System Analysis/Design and Database Design</li>
-              </ul>
-            </div>
-
-            <!-- Bosch ----------------------->
-            <div id="bosch" class="tabcontent p-3 border-0" style="display:none" >
-              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\bosch.jpg" alt="Bosch Logo">
-              <h5><a href="https://www.bosch-home.co.uk/" target="_blank">Bosch UK- Telecom Dept.</a></h5>
-              <!-- <h6 class="mt-4">Nov/1999-Apr/2000</h6> -->
-              <h6>Electronic communications, Analyst Programmer</h6>
-              <ul>
-                <li>Implementation of their business core system using <b>Delphi 5</b> and <b>Interbase 5.5</b> Database</li>
-                <li>System migration from <b>Delphi 1.0</b> to <b>Delphi 5.0</b></li>
-                <li>Reports migration from <b>ReportSmith</b> to <b>QuickReport 3.05</b></li>
-                <li>Database server migration from <b>Netware</b> to <b>NT 4.0</b></li> 
-                <li>Data migration from Unix to <b>Interbase 5.5</b></li> 
-              </ul>
-            </div>
-
-            <!-- Building and Property Group ---------------------->
-            <div id="bandprop" class="tabcontent p-3 border-0" style="display:none" >
-              <img class="img-fluid rounded-start mt-4 mb-4 " src=".\images\bpg.jpg" alt="Building & Property Group Logo">
-              <h5><a href="https://www.crunchbase.com/organization/building-property-group" target="blank">Building & Property Group</a></h5>
-              <!-- <h6 class="mt-4">Sep/1998-Oct/1999</h6> -->
-              <h6>Property Management, Analyst Programmer/ Support</h6>
-              <ul>
-                <li>Maintenance and development of systems using <b>Delphi 4.0</b> and <b>Interbase 5.0</b></li>
-                <li>Creation of VCL components</li>
-                <li>Support to local and remote users</li>
-              </ul>
-            </div>
-
-            <!-- Reuters -------------------------------->
-            <div id="reuters" class="tabcontent p-3 border-0" style="display:none" >
-              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\reuters.png" alt="Reuters Logo">
-              <h5><a href ="https://www.reuters.com/" target="_blank">Reuters </a> </h5>
-              <!-- <h6 class="mt-4">Mar/1998-Jul/1998	</h6> -->
+          <!-- Greig Middleton ----------------->
+          <div id="greig" class="tabcontent p-3 border-0" style="display:none" >
+              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\report.png" alt="Greig Middleton Logo">
+              <h5><a href="https://companycheck.co.uk/company/03835036/GREIG-MIDDLETON--CO-LIMITED/companies-house-data" 
+                target="_blank">Greig  Middleton</a></h5>
+              <h6> (Company Dissolved)</h6>
+              <!-- <h6 class="mt-4">Jun-Aug/2000</h6> -->
               <h6>Stock Exchange and Finance, Analyst Programmer</h6>
-              <ul>
-                <li><b>Delphi 3.0</b> database applications development with <b>SQL Server 6.5</b></li>
-                <li>Creation and maintenance of database VCL components</li>
-                <li>Year 2000 compliance projects, checking and fixing of <b>Delphi 3.0</b> and <b>C++</b> code</li>
-                <li>Creation of reports pointing possible problems and solutions</li>
-              </ul>
-            </div>
+            <ul>
+              <li>Maintenance and development of Stock Market Transfers System using <b>Delphi 5.0</b> and <b>Sql Server 6.5</b></li>
+              <li>System Analysis/Design and Database Design</li>
+            </ul>
+          </div>
 
-            <!-- Counterpoint -------------------------------->
-            <div id="count" class="tabcontent p-3 border-0" style="display:none" >
-              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\counter.png" alt="Counterpoint Systems Logo">
-              <h5><a href="https://www.crunchbase.com/acquisition/vistex-inc-acquires-counterpoint-systems--1835e526" target="_blank">
-                  Counterpoint Systems</a></h5>     
-              <!-- <h6 class="mt-4">Jul/1997-Feb/1998	</h6> -->
-              <h6>Music Publishing Software House, Systems Developer</h6>
-              <ul>
-                <li><b>Delphi v1.0</b> database applications development with <b>SQL Server</b></li>
-                <li>Database Design/Modelling</li>
-              </ul>
-            </div>
+          <!-- Bosch ----------------------->
+          <div id="bosch" class="tabcontent p-3 border-0" style="display:none" >
+            <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\bosch.jpg" alt="Bosch Logo">
+            <h5><a href="https://www.bosch-home.co.uk/" target="_blank">Bosch UK- Telecom Dept.</a></h5>
+            <!-- <h6 class="mt-4">Nov/1999-Apr/2000</h6> -->
+            <h6>Electronic communications, Analyst Programmer</h6>
+            <ul>
+              <li>Implementation of their business core system using <b>Delphi 5</b> and <b>Interbase 5.5</b> Database</li>
+              <li>System migration from <b>Delphi 1.0</b> to <b>Delphi 5.0</b></li>
+              <li>Reports migration from <b>ReportSmith</b> to <b>QuickReport 3.05</b></li>
+              <li>Database server migration from <b>Netware</b> to <b>NT 4.0</b></li> 
+              <li>Data migration from Unix to <b>Interbase 5.5</b></li> 
+            </ul>
+          </div>
 
-            <!-- Sainsburys -------------------------------->
-            <div id="sainsburys" class="tabcontent p-3 border-0" style="display:none" >
-              <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\sainsburys.png" alt="Sainsburys Logo">
-              <h5><a href = "https://www.about.sainsburys.co.uk/" target="_blank">Sainsburys Plc</a></h5> 
-              <!-- <h6 class="mt-4">1995-1997</h6> -->
-              <h6>Head Office - Retail and Finance, Systems Developer</h6>
-              <ul>
-                <li>Corporate Stock Management analysis and tools development</li>
-                <li>Creating weekly data reports to board of directors meetings using the tools developed</li>
-                <li><b>Delphi v1.0</b> database applications development with <b>Interbase 5.0/SQL</b></li>
-                <li>Data migration from <b>VMS</b> databases to relational database</li>
-              </ul>
-            </div>
-            </div>
+          <!-- Building and Property Group ---------------------->
+          <div id="bandprop" class="tabcontent p-3 border-0" style="display:none" >
+            <img class="img-fluid rounded-start mt-4 mb-4 " src=".\images\bpg.jpg" alt="Building & Property Group Logo">
+            <h5><a href="https://www.crunchbase.com/organization/building-property-group" target="blank">Building & Property Group</a></h5>
+            <!-- <h6 class="mt-4">Sep/1998-Oct/1999</h6> -->
+            <h6>Property Management, Analyst Programmer/ Support</h6>
+            <ul>
+              <li>Maintenance and development of systems using <b>Delphi 4.0</b> and <b>Interbase 5.0</b></li>
+              <li>Creation of VCL components</li>
+              <li>Support to local and remote users</li>
+            </ul>
+          </div>
+
+          <!-- Reuters -------------------------------->
+          <div id="reuters" class="tabcontent p-3 border-0" style="display:none" >
+            <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\reuters.png" alt="Reuters Logo">
+            <h5><a href ="https://www.reuters.com/" target="_blank">Reuters </a> </h5>
+            <!-- <h6 class="mt-4">Mar/1998-Jul/1998	</h6> -->
+            <h6>Stock Exchange and Finance, Analyst Programmer</h6>
+            <ul>
+              <li><b>Delphi 3.0</b> database applications development with <b>SQL Server 6.5</b></li>
+              <li>Creation and maintenance of database VCL components</li>
+              <li>Year 2000 compliance projects, checking and fixing of <b>Delphi 3.0</b> and <b>C++</b> code</li>
+              <li>Creation of reports pointing possible problems and solutions</li>
+            </ul>
+          </div>
+
+          <!-- Counterpoint -------------------------------->
+          <div id="count" class="tabcontent p-3 border-0" style="display:none" >
+            <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\counter.png" alt="Counterpoint Systems Logo">
+            <h5><a href="https://www.crunchbase.com/acquisition/vistex-inc-acquires-counterpoint-systems--1835e526" target="_blank">
+                Counterpoint Systems</a></h5>     
+            <!-- <h6 class="mt-4">Jul/1997-Feb/1998	</h6> -->
+            <h6>Music Publishing Software House, Systems Developer</h6>
+            <ul>
+              <li><b>Delphi v1.0</b> database applications development with <b>SQL Server</b></li>
+              <li>Database Design/Modelling</li>
+            </ul>
+          </div>
+
+          <!-- Sainsburys -------------------------------->
+          <div id="sainsburys" class="tabcontent p-3 border-0" style="display:none" >
+            <img class="img-fluid rounded-start mt-4 mb-4" src=".\images\sainsburys.png" alt="Sainsburys Logo">
+            <h5><a href = "https://www.about.sainsburys.co.uk/" target="_blank">Sainsburys Plc</a></h5> 
+            <!-- <h6 class="mt-4">1995-1997</h6> -->
+            <h6>Head Office - Retail and Finance, Systems Developer</h6>
+            <ul>
+              <li>Corporate Stock Management analysis and tools development</li>
+              <li>Creating weekly data reports to board of directors meetings using the tools developed</li>
+              <li><b>Delphi v1.0</b> database applications development with <b>Interbase 5.0/SQL</b></li>
+              <li>Data migration from <b>VMS</b> databases to relational database</li>
+            </ul>
+          </div>
+          </div>
         </div>
         
         <!------------------------------------ 
         Projects 
         ---------------------------------- -->
         <div id="projects" class="container">
-          <h2 class="title">Projects</h2>
+          <h3 class="title">Projects</h3>
           <div class="theme-toggle-btn p-2">    
             <div class="row row-cols-1 g-2">
           
@@ -626,7 +627,7 @@
         Contact 
         ------------------------------------>
         <div id="contact" class="container">
-          <h2 class="title">Contact</h2>
+          <h3 class="title">Contact</h3>
           <div class="card">
             <div class="card-body">
               <div class="row g-4">
