@@ -1,18 +1,18 @@
 /* index.html 
 Opens page in content */
-function load_page(page, elementId) {
-  fetch(page)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(elementId).innerHTML = data;
-    })
-    .catch(error => console.error('Error loading page:', error));
-}
+// function load_page(page, elementId) {
+//   fetch(page)
+//     .then(response => response.text())
+//     .then(data => {
+//       document.getElementById(elementId).innerHTML = data;
+//     })
+//     .catch(error => console.error('Error loading page:', error));
+// }
 
-// Load the home page by default
-document.addEventListener("DOMContentLoaded", function() {
-  load_page("home.html", "content");
-});
+// // Load the home page by default
+// document.addEventListener("DOMContentLoaded", function() {
+//   load_page("home.html", "content");
+// });
 
 // Burger menu toggle for mobile - shows/hides sidebar nav
 document.addEventListener('DOMContentLoaded', function() {
@@ -91,17 +91,17 @@ function toggleProjectDescription(event) {
   const description = button.nextElementSibling;
   
   // Hide all other descriptions and remove active class from buttons
-  document.querySelectorAll('.project-description').forEach(desc => {
-    if (desc !== description) {
-      desc.style.display = 'none';
-    }
-  });
+  // document.querySelectorAll('.project-description').forEach(desc => {
+  //   if (desc !== description) {
+  //     desc.style.display = 'none';
+  //   }
+  // });
   
-  document.querySelectorAll('.project-header').forEach(btn => {
-    if (btn !== button) {
-      btn.classList.remove('active');
-    }
-  });
+  // document.querySelectorAll('.project-header').forEach(btn => {
+  //   if (btn !== button) {
+  //     btn.classList.remove('active');
+  //   }
+  // });
   
   // Toggle current description
   if (description.style.display === 'none' || description.style.display === '') {
